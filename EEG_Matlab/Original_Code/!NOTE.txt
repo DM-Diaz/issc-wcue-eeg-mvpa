@@ -1,0 +1,1 @@
+Note that this was the original matlab scripts given to Dylan by Yu-Chin at the start of this project. These were heavily edited afterwards and are the scripts found in EEG_Matlab folder. 

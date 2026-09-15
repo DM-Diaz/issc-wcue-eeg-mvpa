@@ -1,0 +1,7 @@
+b7 = (b3+b5)/2 label all-switch
+b8 = (b4+b6)/2 label all-repeat
+b9 = b7 - b8 label switch-minus-repeat
+b10 = b3 - b4 label rpCond switch-effect
+b11 = b5 - b6 label swCond switch-effect
+b12 = b11 - b10 label switch-effect swCond-minus-rpCond
+b13 = b2 - b1 label swCond-minus-rpCond

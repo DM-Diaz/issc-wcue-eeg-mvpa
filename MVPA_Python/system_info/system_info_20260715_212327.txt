@@ -1,0 +1,147 @@
+SYSTEM AND SOFTWARE INFORMATION
+================================
+Collected (local): 2026-07-15T21:23:27.969924-04:00
+Collected (UTC): 2026-07-16T01:23:27.969924+00:00
+Note: None
+
+OPERATING SYSTEM
+----------------
+System: Linux
+Release: 6.17.0-35-generic
+Version: #35~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 19:30:42 UTC 2
+Architecture: x86_64
+Python architecture: 64bit
+
+HARDWARE
+--------
+CPU: Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz
+Logical CPU count: 16
+Physical CPU count: None
+RAM (GiB): 125.53
+GPU 0: NVIDIA GeForce GTX 1660 SUPER | driver 580.159.03 | 6144 MiB | compute capability 7.5
+
+PYTHON
+------
+Version: 3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]
+Implementation: CPython
+Executable name: python
+Environment: .venv
+
+SELECTED PACKAGE VERSIONS
+-------------------------
+numpy: 2.5.1
+scipy: 1.18.0
+pandas: 3.0.3
+scikit-learn: 1.9.0
+mne: 1.12.1
+joblib: 1.5.3
+matplotlib: 3.11.0
+torch: not installed
+torchvision: not installed
+torchaudio: not installed
+statsmodels: not installed
+xgboost: not installed
+lightgbm: not installed
+numba: not installed
+h5py: not installed
+openpyxl: not installed
+
+PYTORCH / CUDA
+--------------
+PyTorch installed: False
+
+THREADING / DEVICE ENVIRONMENT
+------------------------------
+OMP_NUM_THREADS: None
+MKL_NUM_THREADS: None
+OPENBLAS_NUM_THREADS: None
+NUMEXPR_NUM_THREADS: None
+VECLIB_MAXIMUM_THREADS: None
+CUDA_VISIBLE_DEVICES: None
+PYTHONHASHSEED: None
+
+GIT
+---
+Inside repository: False
+
+NUMPY BUILD CONFIGURATION
+-------------------------
+{
+  "Compilers": {
+    "c": {
+      "name": "gcc",
+      "linker": "ld.bfd",
+      "version": "14.2.1",
+      "commands": "cc"
+    },
+    "cython": {
+      "name": "cython",
+      "linker": "cython",
+      "version": "3.2.8",
+      "commands": "cython"
+    },
+    "c++": {
+      "name": "gcc",
+      "linker": "ld.bfd",
+      "version": "14.2.1",
+      "commands": "c++"
+    }
+  },
+  "Machine Information": {
+    "host": {
+      "cpu": "x86_64",
+      "family": "x86_64",
+      "endian": "little",
+      "system": "linux"
+    },
+    "build": {
+      "cpu": "x86_64",
+      "family": "x86_64",
+      "endian": "little",
+      "system": "linux"
+    }
+  },
+  "Build Dependencies": {
+    "blas": {
+      "name": "scipy-openblas",
+      "found": true,
+      "version": "0.3.33.112.0",
+      "detection method": "pkgconfig",
+      "include directory": "/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/include",
+      "lib directory": "/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/lib",
+      "openblas configuration": "OpenBLAS 0.3.33.112.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+      "pc file directory": "/project/.openblas"
+    },
+    "lapack": {
+      "name": "scipy-openblas",
+      "found": true,
+      "version": "0.3.33.112.0",
+      "detection method": "pkgconfig",
+      "include directory": "/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/include",
+      "lib directory": "/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/lib",
+      "openblas configuration": "OpenBLAS 0.3.33.112.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+      "pc file directory": "/project/.openblas"
+    }
+  },
+  "Python Information": {
+    "path": "/tmp/build-env-kd0sw37v/bin/python",
+    "version": "3.12"
+  },
+  "SIMD Extensions": {
+    "baseline": [
+      "X86_V2"
+    ],
+    "found": [
+      "X86_V3"
+    ],
+    "not found": [
+      "X86_V4",
+      "AVX512_ICL",
+      "AVX512_SPR"
+    ]
+  }
+}
+
+PRIVACY
+-------
+This report intentionally omits hostname, username, hardware serial numbers, MAC addresses, and full filesystem paths.

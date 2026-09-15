@@ -1,0 +1,59 @@
+marker code
+
+1 = lowSR (low switch reward)
+2 = noR (no reward at all)
+3 = highSR (high switch reward)
+
+4 = switch-to-animacy task
+5 = switch-to-size task
+6 = repeat-animacy task
+7 = repeat-size task
+
+8 = voluntary task cue
+
+13 = 'c'
+14 = 'm'
+15 = 'd'
+16 = 'k'
+17 = other than those
+
+10 = feedback onset, incorrect
+11 = feedback onset, correct
+12 = feedback onset, too slow/no response
+
+9 = beginning of each block
+
+
+python command: 
+a=10
+print(bytes([a]))
+bytes([a])==bytes([int('0x0A', 16)])
+
+or if a='4'
+print(bytes([int(a)]))
+bytes([int(a)])==bytes([int('0x04', 16)])
+
+
+on the EEG screen, it will print
+0x01 = S1
+0x02 = S2
+0x03 = S3
+0x04 = S4
+0x05 = S5
+0x06 = S6
+0x07 = S7
+0x08 = S8
+0x09 = S9
+0x0A = S10
+0x0B = S11
+0x0C = S12
+0x0D = S13
+0x0E = S14
+0x0F = S15
+0x10 = S16
+0x11 = S17
+
+0x11 = S17
+
+
+

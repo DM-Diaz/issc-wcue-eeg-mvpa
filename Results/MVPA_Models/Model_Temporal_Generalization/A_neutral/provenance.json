@@ -1,0 +1,382 @@
+{
+  "created_utc": "2026-07-23T04:06:59.439437+00:00",
+  "analysis": "A_neutral",
+  "description": "train blocks [1, 2, 4, 5] -> test block 3 (context-controlled)",
+  "config_hash": "8dbe3ce9bf",
+  "config": {
+    "analysis": "A_neutral",
+    "analysis_version": 2,
+    "n_avg": 4,
+    "n_repeats": 20,
+    "n_folds_max": 5,
+    "c_reg": 1.0,
+    "decim": 2,
+    "random_seed": 42,
+    "min_pt_test": 4,
+    "min_pt_train": 8,
+    "train_blocks": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "test_block": 3,
+    "clf": "standardscaler+logreg_l2_liblinear"
+  },
+  "cv_convention": "Model A: StratifiedKFold over RAW trials wrapping the whole time x time matrix, pseudotrials formed inside each split, no trial shared between train and test at any time-pair (King & Dehaene 2014). A_neutral: no CV; train and test blocks are disjoint by design.",
+  "decimation": {
+    "decim": 2,
+    "note": "MNE decimate() does NOT low-pass filter; a guard verifies data lowpass < post-decimation Nyquist",
+    "allow_unsafe": false
+  },
+  "fold_selection": "n_splits chosen per subject as the largest value <= N_FOLDS_MAX whose test sets still yield MIN_PT_TEST pseudotrials/class; every concrete split re-verified",
+  "n_subjects": 57,
+  "subject_ids": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    1,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    2,
+    31,
+    35,
+    36,
+    37,
+    38,
+    3,
+    40,
+    41,
+    42,
+    43,
+    45,
+    46,
+    47,
+    48,
+    49,
+    4,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    5,
+    60,
+    65,
+    66,
+    68,
+    69,
+    6,
+    70,
+    7,
+    8,
+    9
+  ],
+  "dropped_subjects": [
+    33
+  ],
+  "per_subject_split_info": {
+    "10": {
+      "n_splits": 0,
+      "train_pt_per_class": 16,
+      "test_pt_per_class": 7
+    },
+    "11": {
+      "n_splits": 0,
+      "train_pt_per_class": 17,
+      "test_pt_per_class": 10
+    },
+    "12": {
+      "n_splits": 0,
+      "train_pt_per_class": 14,
+      "test_pt_per_class": 6
+    },
+    "13": {
+      "n_splits": 0,
+      "train_pt_per_class": 17,
+      "test_pt_per_class": 11
+    },
+    "14": {
+      "n_splits": 0,
+      "train_pt_per_class": 18,
+      "test_pt_per_class": 10
+    },
+    "15": {
+      "n_splits": 0,
+      "train_pt_per_class": 18,
+      "test_pt_per_class": 10
+    },
+    "16": {
+      "n_splits": 0,
+      "train_pt_per_class": 19,
+      "test_pt_per_class": 10
+    },
+    "17": {
+      "n_splits": 0,
+      "train_pt_per_class": 13,
+      "test_pt_per_class": 5
+    },
+    "18": {
+      "n_splits": 0,
+      "train_pt_per_class": 13,
+      "test_pt_per_class": 5
+    },
+    "20": {
+      "n_splits": 0,
+      "train_pt_per_class": 15,
+      "test_pt_per_class": 8
+    },
+    "21": {
+      "n_splits": 0,
+      "train_pt_per_class": 18,
+      "test_pt_per_class": 10
+    },
+    "22": {
+      "n_splits": 0,
+      "train_pt_per_class": 19,
+      "test_pt_per_class": 11
+    },
+    "23": {
+      "n_splits": 0,
+      "train_pt_per_class": 18,
+      "test_pt_per_class": 10
+    },
+    "24": {
+      "n_splits": 0,
+      "train_pt_per_class": 19,
+      "test_pt_per_class": 10
+    },
+    "25": {
+      "n_splits": 0,
+      "train_pt_per_class": 17,
+      "test_pt_per_class": 8
+    },
+    "26": {
+      "n_splits": 0,
+      "train_pt_per_class": 17,
+      "test_pt_per_class": 8
+    },
+    "27": {
+      "n_splits": 0,
+      "train_pt_per_class": 14,
+      "test_pt_per_class": 8
+    },
+    "28": {
+      "n_splits": 0,
+      "train_pt_per_class": 21,
+      "test_pt_per_class": 10
+    },
+    "29": {
+      "n_splits": 0,
+      "train_pt_per_class": 16,
+      "test_pt_per_class": 8
+    },
+    "2": {
+      "n_splits": 0,
+      "train_pt_per_class": 12,
+      "test_pt_per_class": 7
+    },
+    "31": {
+      "n_splits": 0,
+      "train_pt_per_class": 14,
+      "test_pt_per_class": 7
+    },
+    "35": {
+      "n_splits": 0,
+      "train_pt_per_class": 13,
+      "test_pt_per_class": 8
+    },
+    "36": {
+      "n_splits": 0,
+      "train_pt_per_class": 20,
+      "test_pt_per_class": 10
+    },
+    "37": {
+      "n_splits": 0,
+      "train_pt_per_class": 16,
+      "test_pt_per_class": 7
+    },
+    "38": {
+      "n_splits": 0,
+      "train_pt_per_class": 10,
+      "test_pt_per_class": 7
+    },
+    "40": {
+      "n_splits": 0,
+      "train_pt_per_class": 13,
+      "test_pt_per_class": 11
+    },
+    "41": {
+      "n_splits": 0,
+      "train_pt_per_class": 16,
+      "test_pt_per_class": 7
+    },
+    "42": {
+      "n_splits": 0,
+      "train_pt_per_class": 18,
+      "test_pt_per_class": 8
+    },
+    "43": {
+      "n_splits": 0,
+      "train_pt_per_class": 15,
+      "test_pt_per_class": 7
+    },
+    "45": {
+      "n_splits": 0,
+      "train_pt_per_class": 21,
+      "test_pt_per_class": 9
+    },
+    "46": {
+      "n_splits": 0,
+      "train_pt_per_class": 21,
+      "test_pt_per_class": 11
+    },
+    "47": {
+      "n_splits": 0,
+      "train_pt_per_class": 20,
+      "test_pt_per_class": 11
+    },
+    "48": {
+      "n_splits": 0,
+      "train_pt_per_class": 9,
+      "test_pt_per_class": 7
+    },
+    "49": {
+      "n_splits": 0,
+      "train_pt_per_class": 9,
+      "test_pt_per_class": 8
+    },
+    "4": {
+      "n_splits": 0,
+      "train_pt_per_class": 19,
+      "test_pt_per_class": 10
+    },
+    "51": {
+      "n_splits": 0,
+      "train_pt_per_class": 15,
+      "test_pt_per_class": 9
+    },
+    "52": {
+      "n_splits": 0,
+      "train_pt_per_class": 10,
+      "test_pt_per_class": 6
+    },
+    "53": {
+      "n_splits": 0,
+      "train_pt_per_class": 20,
+      "test_pt_per_class": 11
+    },
+    "54": {
+      "n_splits": 0,
+      "train_pt_per_class": 8,
+      "test_pt_per_class": 10
+    },
+    "55": {
+      "n_splits": 0,
+      "train_pt_per_class": 18,
+      "test_pt_per_class": 9
+    },
+    "56": {
+      "n_splits": 0,
+      "train_pt_per_class": 19,
+      "test_pt_per_class": 10
+    },
+    "57": {
+      "n_splits": 0,
+      "train_pt_per_class": 13,
+      "test_pt_per_class": 8
+    },
+    "58": {
+      "n_splits": 0,
+      "train_pt_per_class": 8,
+      "test_pt_per_class": 7
+    },
+    "59": {
+      "n_splits": 0,
+      "train_pt_per_class": 17,
+      "test_pt_per_class": 10
+    },
+    "5": {
+      "n_splits": 0,
+      "train_pt_per_class": 15,
+      "test_pt_per_class": 8
+    },
+    "65": {
+      "n_splits": 0,
+      "train_pt_per_class": 8,
+      "test_pt_per_class": 5
+    },
+    "66": {
+      "n_splits": 0,
+      "train_pt_per_class": 18,
+      "test_pt_per_class": 8
+    },
+    "68": {
+      "n_splits": 0,
+      "train_pt_per_class": 19,
+      "test_pt_per_class": 9
+    },
+    "69": {
+      "n_splits": 0,
+      "train_pt_per_class": 20,
+      "test_pt_per_class": 10
+    },
+    "6": {
+      "n_splits": 0,
+      "train_pt_per_class": 15,
+      "test_pt_per_class": 7
+    },
+    "70": {
+      "n_splits": 0,
+      "train_pt_per_class": 18,
+      "test_pt_per_class": 6
+    },
+    "7": {
+      "n_splits": 0,
+      "train_pt_per_class": 10,
+      "test_pt_per_class": 10
+    },
+    "8": {
+      "n_splits": 0,
+      "train_pt_per_class": 18,
+      "test_pt_per_class": 9
+    },
+    "9": {
+      "n_splits": 0,
+      "train_pt_per_class": 15,
+      "test_pt_per_class": 7
+    }
+  },
+  "decoding_minutes": 75.9,
+  "stats": {
+    "test": "2-D two-sided cluster permutation vs 0.5 (lattice adjacency over the train x test grid)",
+    "tail": 0,
+    "alpha": 0.05,
+    "n_permutations": 10000,
+    "note": "cluster-level inference; individual cells within a significant cluster are not individually significant"
+  },
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.1",
+    "mne": "1.12.1",
+    "sklearn": "1.9.0"
+  }
+}

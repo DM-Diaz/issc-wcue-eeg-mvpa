@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "collected_at_local": "2026-07-15T21:23:27.969924-04:00",
+  "collected_at_utc": "2026-07-16T01:23:27.969924+00:00",
+  "note": null,
+  "privacy": {
+    "hostname_recorded": false,
+    "username_recorded": false,
+    "serial_numbers_recorded": false,
+    "full_paths_recorded": false
+  },
+  "operating_system": {
+    "system": "Linux",
+    "release": "6.17.0-35-generic",
+    "version": "#35~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 19:30:42 UTC 2",
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+    "architecture": "x86_64",
+    "python_architecture": "64bit"
+  },
+  "hardware": {
+    "cpu_model": "Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz",
+    "logical_cpu_count": 16,
+    "physical_cpu_count": null,
+    "total_memory_bytes": 134791380992,
+    "total_memory_gib": 125.53,
+    "nvidia_smi": {
+      "query_result": {
+        "available": true,
+        "command": [
+          "nvidia-smi",
+          "--query-gpu=index,name,driver_version,memory.total,compute_cap",
+          "--format=csv,noheader,nounits"
+        ],
+        "returncode": 0,
+        "stdout": "0, NVIDIA GeForce GTX 1660 SUPER, 580.159.03, 6144, 7.5",
+        "stderr": ""
+      },
+      "parsed_gpus": [
+        {
+          "index": "0",
+          "name": "NVIDIA GeForce GTX 1660 SUPER",
+          "driver_version": "580.159.03",
+          "memory_total_mib": "6144",
+          "compute_capability": "7.5"
+        }
+      ]
+    }
+  },
+  "python": {
+    "version": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+    "implementation": "CPython",
+    "executable_name": "python",
+    "prefix_name": ".venv",
+    "conda_environment": null,
+    "virtual_environment_name": ".venv"
+  },
+  "selected_package_versions": {
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "scikit-learn": "1.9.0",
+    "mne": "1.12.1",
+    "joblib": "1.5.3",
+    "matplotlib": "3.11.0",
+    "torch": null,
+    "torchvision": null,
+    "torchaudio": null,
+    "statsmodels": null,
+    "xgboost": null,
+    "lightgbm": null,
+    "numba": null,
+    "h5py": null,
+    "openpyxl": null
+  },
+  "torch": {
+    "installed": false
+  },
+  "numpy_build_configuration": "{\n  \"Compilers\": {\n    \"c\": {\n      \"name\": \"gcc\",\n      \"linker\": \"ld.bfd\",\n      \"version\": \"14.2.1\",\n      \"commands\": \"cc\"\n    },\n    \"cython\": {\n      \"name\": \"cython\",\n      \"linker\": \"cython\",\n      \"version\": \"3.2.8\",\n      \"commands\": \"cython\"\n    },\n    \"c++\": {\n      \"name\": \"gcc\",\n      \"linker\": \"ld.bfd\",\n      \"version\": \"14.2.1\",\n      \"commands\": \"c++\"\n    }\n  },\n  \"Machine Information\": {\n    \"host\": {\n      \"cpu\": \"x86_64\",\n      \"family\": \"x86_64\",\n      \"endian\": \"little\",\n      \"system\": \"linux\"\n    },\n    \"build\": {\n      \"cpu\": \"x86_64\",\n      \"family\": \"x86_64\",\n      \"endian\": \"little\",\n      \"system\": \"linux\"\n    }\n  },\n  \"Build Dependencies\": {\n    \"blas\": {\n      \"name\": \"scipy-openblas\",\n      \"found\": true,\n      \"version\": \"0.3.33.112.0\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/include\",\n      \"lib directory\": \"/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/lib\",\n      \"openblas configuration\": \"OpenBLAS 0.3.33.112.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64\",\n      \"pc file directory\": \"/project/.openblas\"\n    },\n    \"lapack\": {\n      \"name\": \"scipy-openblas\",\n      \"found\": true,\n      \"version\": \"0.3.33.112.0\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/include\",\n      \"lib directory\": \"/opt/_internal/cpython-3.12.13/lib/python3.12/site-packages/scipy_openblas64/lib\",\n      \"openblas configuration\": \"OpenBLAS 0.3.33.112.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64\",\n      \"pc file directory\": \"/project/.openblas\"\n    }\n  },\n  \"Python Information\": {\n    \"path\": \"/tmp/build-env-kd0sw37v/bin/python\",\n    \"version\": \"3.12\"\n  },\n  \"SIMD Extensions\": {\n    \"baseline\": [\n      \"X86_V2\"\n    ],\n    \"found\": [\n      \"X86_V3\"\n    ],\n    \"not found\": [\n      \"X86_V4\",\n      \"AVX512_ICL\",\n      \"AVX512_SPR\"\n    ]\n  }\n}",
+  "threading_and_device_environment": {
+    "OMP_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "NUMEXPR_NUM_THREADS": null,
+    "VECLIB_MAXIMUM_THREADS": null,
+    "CUDA_VISIBLE_DEVICES": null,
+    "PYTHONHASHSEED": null
+  },
+  "git": {
+    "inside_repository": false
+  }
+}

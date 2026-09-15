@@ -1,0 +1,116 @@
+{
+  "created_utc": "2026-07-23T01:48:47.877540+00:00",
+  "n_subjects": 58,
+  "subject_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    31,
+    33,
+    35,
+    36,
+    37,
+    38,
+    40,
+    41,
+    42,
+    43,
+    45,
+    46,
+    47,
+    48,
+    49,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    65,
+    66,
+    68,
+    69,
+    70
+  ],
+  "dropped_only_neural": [],
+  "dropped_only_behavioral": [
+    19,
+    30,
+    32,
+    34,
+    39,
+    44,
+    50,
+    61,
+    62,
+    64,
+    67
+  ],
+  "neural_window_s": [
+    0.13,
+    0.798
+  ],
+  "neural_window_samples": 167,
+  "neural_source": "cv_group_scores.npy (saved Model A per-subject curves)",
+  "behavioral_measure": "reward-by-transition RT interaction (swCond switch-cost minus rpCond switch-cost), inducer trials, RT_exclude==0",
+  "spearman": {
+    "rho": 0.07557907041127074,
+    "p": 0.5728421951277329,
+    "ci95": [
+      -0.18561279997968633,
+      0.3275861656455227
+    ],
+    "loso_range": [
+      0.03156598392533057,
+      0.11686543946072078
+    ]
+  },
+  "pearson": {
+    "r": 0.08217389845268266,
+    "p": 0.5397222879574213,
+    "ci95": [
+      -0.16890151023945604,
+      0.33095406312894576
+    ]
+  },
+  "behavioral_interaction_ms": {
+    "mean": 33.16308258750145,
+    "sd": 44.26032596221607
+  },
+  "n_bootstrap": 10000,
+  "random_seed": 42,
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.1",
+    "pandas": "3.0.3"
+  }
+}

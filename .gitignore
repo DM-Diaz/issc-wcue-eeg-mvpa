@@ -1,0 +1,18 @@
+# Raw / participant source data
+raw_data/
+subject_data/
+*.vhdr
+*.vmrk
+*.eeg
+*.set
+*.fdt
+
+# Large per-subject prediction outputs
+Results/MVPA_Models/**/preds/
+
+# Large derived MATLAB data
+EEG_Matlab/EEG_Struct.mat
+
+# Private metadata
+*_metadata.csv
+E3_N70.csv
