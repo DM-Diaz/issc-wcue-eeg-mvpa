@@ -18,8 +18,12 @@ The analysis scripts are written to operate on the original study data when thos
 
 ## Authors
 
-Dylan M. Diaz  
+Dylan M. Diaz
+Departments of Computer Science and Psychology
 California State University, San Bernardino
+dylan.diaz4811@coyote.csusb.edu
 
-Yu-Chin Chiu  
+Yu-Chin Chiu
+Department of Psychological Sciences
 Purdue University
+yuchinchiu@purdue.edu
